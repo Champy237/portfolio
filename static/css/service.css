@@ -1,0 +1,81 @@
+body{
+    background:radial-gradient(circle,rgb(131, 214, 240),rgb(76, 170, 214)) ;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    background-blend-mode: multiply ;
+    background-attachment: fixed;
+}
+
+.container-fluid:hover{
+    transform: scale(1.1);
+    transition: 0.3;
+}
+.nav{
+    color: rgb(4, 238, 238);
+}
+@media(max-width:768px){
+    h1{
+        font-size: 25px;
+    }
+    .container-fluid{
+        width: 88%;
+    }
+    .container-fluid h1{
+        color: white;
+    }
+    .container{
+        width: 100%;
+        background:radial-gradient(circle,rgb(76, 175, 241),rgb(10, 82, 110)) ;
+        margin-top: 20px;
+    }
+    .container:hover{
+        transform: scale(1.1);
+        transition: 0.5;
+        background-color: green;
+        color: white;
+    }
+}
+
+@media(min-width:768px){
+    h3{
+        display: none;
+    }
+    .container-fluid{
+        width: 60%;
+    }
+    .container-fluid h1{
+        font-size: 25px;
+        color: white;
+    }
+    .container-fluid:hover{
+        transform: scale(1.2);
+        transition: 0.5;
+    }
+    .container{
+        width: 65%;
+        background:radial-gradient(circle,rgb(76, 175, 241),rgb(10, 82, 110)) ;
+        margin-top: 20px;
+        border-radius:12px ;
+    }
+    .col-md-6 .col-lg-6{
+        width: 80%;
+    }
+    .container:hover{
+        transform: scale(1.1);
+        transition: 0.5;
+        background-color: green;
+        color: white;
+        box-shadow: 2px 2px 2px rgb(31, 210, 255);
+    }
+}
+svg:hover{
+    transform: scale(1.2);
+    transition: 0.5;
+}
+
+a:hover{
+    transform: scale(1.2);
+    transition: 0.5;
+}

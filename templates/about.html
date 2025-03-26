@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>about</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Utilisez les liens absolus vers les CDNs -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{% static 'css/about.css' %}">
+  <style>
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default" role="navigation" style="background: radial-gradient(circle,rgb(29, 194, 194),rgb(1, 138, 138));">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <img src="{% static 'image/champy.png' %}" alt="image" width="120px" height="120px">
+      <h3 >Welcome to my Web page</h3>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <ul class="nav navbar-nav"style="margin:19px; padding: 19px;">
+        <li ><a style="color:white;" href="{% url 'home' %}">HOME</a></li>
+        <li  class="active"><a href="{% url 'about' %}">ABOUT</a></li>
+        <li><a style="color: white;" href="{% url 'service' %}">SERVICE</a></li>
+        <li><a style="color: white;" href="{% url 'contact' %}">CONTACT</a></li>
+        <li><a style="color: white;" href="{% url 'realisation' %}">REALISATION</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!--<div class="container">
+<div class="row">
+      <div class="col-6">
+        <img src="./image/img2.jpg" alt="my picture" width="275px" height="auto" class="pho">
+      </div>
+      <div class="col-6">
+        <p>hello</p>
+      </div>
+      <div class="col-6">
+          <h2>About me</h2>
+          <p>DATE OF BIRTH : <b>04 AVRIL 2005</b></p>
+          <p >PLACE OF BIRHT: <b>YAOUNDE</b></p>
+          <p >RESISENCE     :    <b>OYOMABAN</b></p>
+          <p >age :<b>19 years old</b></p>
+          <p >Gmail     :<b><a href="cedricallandjong@gmail.com" style="color: white; text-decoration: none;">cedricallandjong@gmail.com</a></b></p>
+          <p ><u> SKILL </u></p>
+          <p >Web development :<b>35%</b></p>
+          <p >html :<b>60%</b></p>
+          <p >css :<b>60%</b></p>
+          <p >java :<b>10%</b></p>
+          <p >C :<b>50%</b></p>
+          <p >javascript:<b>35%</b></p>
+          <p >django :<b>30%</b></p>
+          <p >python :<b>35%</b></p>
+          <p >java :<b>10%</b></p>
+    </div>
+  </div>
+</div>
+-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-5">
+      <img src="{% static 'image/img.jpeg' %}" alt="my picture" width="70%" height="auto" style="border-radius: 10%;" class="img1">
+    </div>
+    <div class="col-sm-7" style=" border-radius: 20px;">
+      <!--<h2>About me</h2>
+      <p>DATE OF BIRTH : <b>04 AVRIL 2005</b></p>
+      <p >PLACE OF BIRHT: <b>YAOUNDE</b></p>
+      <p >RESISENCE     :    <b>OYOMABAN</b></p>
+      <p >age :<b>19 years old</b></p>
+      <p >Gmail     :<b><a href="cedricallandjong@gmail.com" style="color: white; text-decoration: none;">cedricallandjong@gmail.com</a></b></p>
+      <p ><u> SKILL </u></p>
+      <p >Web development :<b>35%</b></p>
+      <p >html :<b>60%</b></p>
+      <p >css :<b>60%</b></p>
+      <p >java :<b>10%</b></p>
+      <p >C :<b>50%</b></p>
+      <p >javascript:<b>35%</b></p>
+      <p >django :<b>30%</b></p>
+      <p >python :<b>35%</b></p>
+      <p >java :<b>10%</b></p>-->
+      <table class="table">
+        <caption><b style="color: white;">ABOUT ME</b></caption>
+        <caption style="color: white;">
+          <p>DATE OF BIRTH : <b>04 AVRIL 2005</b></p>
+          <p >PLACE OF BIRHT: <b>YAOUNDE</b></p>
+          <p >RESISENCE     :    <b>OYOMABAN</b></p>
+          <p >age :<b>19 years old</b></p>
+        </caption>
+        <thead> 
+        <tr>
+        <th class="denger" style="color: white; background-color: black;">SKILL on</th>
+        <th style="color: white; background-color: black;"> %</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="active">
+        <td>javascript</td>
+        <td>40%</td>
+        </tr>
+        <tr class="success">
+        <td>HTML & SS</td>
+        <td>60%</td>
+        </tr>
+        <tr class="warning">
+        <td>python & django</td>
+        <td>30%</td>
+        </tr>
+        <tr class="success">
+        <td>C & C++</td>
+        <td>40%</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+<div class="container-fluid"  style="text-align:center; margin: 20px;">
+  <a href="cedricallanndjong@gmail.com" style="color: white;">  
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+      <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+    </svg>
+  </a>
+  <a href="http://wa.me/683941228" style="color: white;">  
+    <svg xmlns="http://www.w3.org/2000/svg" style="margin: left 10px;" width="30" height="30" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+  </a>
+  <a href="http://t.me/683941228" style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"/>
+    </svg>
+  </a>
+  <a href="http://GitHub.com/allanndjong" style="color: white;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+    </svg>
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=1000585850828088" style="color: White;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+    </svg>
+  </a>
+</div>
+</body>
+</html>
+<!--<div class=
